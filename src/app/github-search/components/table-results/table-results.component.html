@@ -1,0 +1,22 @@
+<table>
+  <thead>
+  <tr class="table100-head">
+    <th>Name</th>
+    <th>Description</th>
+    <th>Owner</th>
+    <th>Stars</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let item of repositories">
+    <tr>
+      <th>{{item.name}}</th>
+      <th>{{item.description}}</th>
+      <th>{{item.owner.login}}</th>
+      <th>{{item.stargazers_count}}</th>
+      <th>{{item.url}}</th>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>

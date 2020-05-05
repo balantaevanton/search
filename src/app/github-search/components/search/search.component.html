@@ -1,0 +1,16 @@
+<div class="container search-form">
+  <label for="search">Find repository by name</label>
+  <input id="search" [formControl]="searchInput" placeholder="Angular">
+  <span class="error" *ngIf="searchInput.hasError('minlength')">
+    Minimum <strong>2</strong> letters
+  </span>
+</div>
+
+<div class="loader" *ngIf="showLoader">
+  Loading ....
+</div>
+
+<div class="table" *ngIf="repositories$ | async as data">
+  <app-table-results [repositories]="data.items"></app-table-results>
+</div>
+

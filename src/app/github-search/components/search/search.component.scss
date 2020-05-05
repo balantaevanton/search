@@ -1,0 +1,44 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.loader {
+  padding: 10px 0;
+  margin: auto;
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+  > * {
+    padding-top: 10px;
+  }
+
+  .error {
+    color: red;
+  }
+  input {
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: 300px;
+    border: none;
+    border-bottom: 1px solid #36304a;
+    padding: 10px ;
+  }
+  label {
+    background: #36304a;
+    color: white;
+    font-size: 24px;
+    line-height: 1.6;
+    padding-left: 10px;
+  }
+
+}
+
+.table {
+  padding-top: 20px;
+}
